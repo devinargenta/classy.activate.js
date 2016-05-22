@@ -16,14 +16,14 @@ $( function() {
 ```
 
 
-### target
+### target: jquery selector
 the placement of the active class
 
-### className
+### className: string
 the active class to apply
 
-### clickOff
+### clickOff: boolean
 should clicking anywhere else remove the class
 
-### indexClass
+### indexClass: boolean
 adds ele-(index) if called on a group of nodes w the same class

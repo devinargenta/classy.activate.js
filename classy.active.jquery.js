@@ -6,7 +6,9 @@
 			target: null,
 			clickOff: true,
 			className: "active",
-			indexClass: null
+			indexClass: null,
+			onClick: function() {},
+			onClose: function() {}
 		};
 
 	function Plugin(element, options) {
@@ -39,9 +41,16 @@
 			$(_.element).on("click", function() {
 				if ($(_.settings.target).hasClass(_.settings.className)){
 					 $(_).trigger(_.CLICK_HANDLER + _.DEACTIVATE)
+					 if (_.settings.onClose) {
+ 							_.settings.onClose.call(this);
+ 					}
 				} else {
 					$(_).trigger(_.CLICK_HANDLER + _.ACTIVATED);
+					if (_.settings.onClick) {
+							_.settings.onClick.call(this);
+					}
 				}
+
 			});
 
 			$(_.element).bind('REMOVEALL', function(){

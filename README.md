@@ -10,7 +10,7 @@ $( function() {
     target: $("body"),
     className: 'active-class',
     clickOff: true,
-    indexClass:
+    indexClass: false
   });
 });
 ```

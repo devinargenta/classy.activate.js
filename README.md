@@ -27,3 +27,9 @@ should clicking anywhere else remove the class
 
 ### indexClass: boolean
 adds ele-(index) if called on a group of nodes w the same class
+
+### onClick: function
+fires on click callback
+
+### onClose: function && stupid naming convention
+fires when you click off / deactivate state

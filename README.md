@@ -12,7 +12,8 @@ $( function() {
     clickOff: true,
     indexClass:
   });
-} );```
+});
+```
 
 
 ### target
